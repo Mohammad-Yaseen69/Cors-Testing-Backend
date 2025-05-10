@@ -22,7 +22,7 @@ app.get("/api", (req, res) => {
         maxAge: 1000 * 60 * 60 * 24,
         httpOnly: true,
         secure: true,
-        sameSite: "strict",
+        sameSite: "none",
     }).send("Hello niglet")
 })
 
