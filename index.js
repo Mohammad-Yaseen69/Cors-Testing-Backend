@@ -5,7 +5,7 @@ import cookieParser from "cookie-parser"
 const app = express()
 
 
-const allowedOrigins = ["http://localhost:5173"];
+const allowedOrigins = ["http://localhost:5173", "https://multiple-cors-test.vercel.app"];
 app.use(cors({
   origin: allowedOrigins,
   methods: ["GET", "POST", "PUT", "DELETE"],
